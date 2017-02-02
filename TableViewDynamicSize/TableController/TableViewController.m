@@ -20,6 +20,7 @@
     [self initTableWithCustomCell];
     
     [self.tableView setContentInset:UIEdgeInsetsMake(44.f, 0.f, 44.f, 0.f)];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self.tableView setRowHeight:UITableViewAutomaticDimension];
     [self.tableView setEstimatedRowHeight:500];
     
@@ -46,15 +47,17 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     TableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" ];
-
+    
     cell.cellImage.image = [UIImage imageNamed:@"imageRoot"];
-    cell.label.text = @"If the linebreakmode doesnt work foryou, another option is to actually calculate the length your string is going to take and if it is going to be longer than the label size, add yourself.If the linebreakmode doesnt work foryou, another option is to actually calculate the length your string is going to take and if it is going to be longer than the label size, add yourself.";
+    cell.profileImageView.image = [UIImage imageNamed:@"imageRight"];
+    cell.label.text = @"Sunset in Rome is Wonderful";
     
-    correctedHeight = 375 / cell.cellImage.image.size.width * cell.cellImage.image.size.height;
-    
+    correctedHeight = 335 / cell.cellImage.image.size.width * cell.cellImage.image.size.height;
     [cell.cellImage removeConstraint: cell.cellImage.constraints.lastObject] ;
     
     self.prototypeCell = cell;
+    
+   
     
     [self updateViewConstraints];
     

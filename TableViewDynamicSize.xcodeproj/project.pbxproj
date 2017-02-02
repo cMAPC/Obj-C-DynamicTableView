@@ -23,6 +23,8 @@
 		1F1F3B371E439AC30041AA2C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F3B361E439AC30041AA2C /* TableViewController.m */; };
 		1F1F3B3B1E439ADF0041AA2C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F3B391E439ADF0041AA2C /* TableViewCell.m */; };
 		1F1F3B3C1E439ADF0041AA2C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1F3B3A1E439ADF0041AA2C /* TableViewCell.xib */; };
+		1F1F3B451E43F7240041AA2C /* placeholder.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1F1F3B441E43F7240041AA2C /* placeholder.svg */; };
+		1F1F3B471E43F76B0041AA2C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1F3B461E43F76B0041AA2C /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		1F1F3B381E439ADF0041AA2C /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		1F1F3B391E439ADF0041AA2C /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		1F1F3B3A1E439ADF0041AA2C /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		1F1F3B441E43F7240041AA2C /* placeholder.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = placeholder.svg; sourceTree = "<group>"; };
+		1F1F3B461E43F76B0041AA2C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		1F1F3B241E4395E30041AA2C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1F1F3B461E43F76B0041AA2C /* placeholder.png */,
+				1F1F3B441E43F7240041AA2C /* placeholder.svg */,
 				1F1F3B251E4395E30041AA2C /* image1.jpg */,
 				1F1F3B261E4395E30041AA2C /* image2.jpg */,
 				1F1F3B271E4395E30041AA2C /* image3.jpg */,
@@ -198,7 +204,9 @@
 				1F1F3B1D1E43940D0041AA2C /* LaunchScreen.storyboard in Resources */,
 				1F1F3B3C1E439ADF0041AA2C /* TableViewCell.xib in Resources */,
 				1F1F3B2D1E4395E30041AA2C /* image2.jpg in Resources */,
+				1F1F3B471E43F76B0041AA2C /* placeholder.png in Resources */,
 				1F1F3B2C1E4395E30041AA2C /* image1.jpg in Resources */,
+				1F1F3B451E43F7240041AA2C /* placeholder.svg in Resources */,
 				1F1F3B2E1E4395E30041AA2C /* image3.jpg in Resources */,
 				1F1F3B2F1E4395E30041AA2C /* image4.jpg in Resources */,
 				1F1F3B321E4395E30041AA2C /* imageRoot.png in Resources */,
