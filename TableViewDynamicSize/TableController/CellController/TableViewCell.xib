@@ -23,16 +23,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
                         <color key="backgroundColor" red="1" green="0.43821865351098821" blue="0.32424464609202897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zf-UD-33J">
+                        <rect key="frame" x="8" y="132" width="359" height="21"/>
+                        <color key="backgroundColor" red="1" green="0.4368658525655813" blue="0.21048368362621139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="q5B-py-u8u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="Jmq-Cu-INe" secondAttribute="bottom" constant="67" id="hAj-kh-ABs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3zf-UD-33J" secondAttribute="bottom" constant="38" id="0NQ-Xb-Ncr"/>
+                    <constraint firstItem="3zf-UD-33J" firstAttribute="top" secondItem="Jmq-Cu-INe" secondAttribute="bottom" constant="8" id="JUe-LH-h7c"/>
                     <constraint firstAttribute="trailing" secondItem="Jmq-Cu-INe" secondAttribute="trailing" id="lfV-zT-Ge2"/>
                     <constraint firstItem="Jmq-Cu-INe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mDk-2k-3Fc"/>
                     <constraint firstItem="Jmq-Cu-INe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="s7t-cn-k0i"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="3zf-UD-33J" secondAttribute="leading" id="tmJ-I5-dZ7"/>
+                    <constraint firstItem="3zf-UD-33J" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="wIf-Gx-Zct"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellImage" destination="Jmq-Cu-INe" id="QPs-Tu-7t2"/>
+                <outlet property="label" destination="3zf-UD-33J" id="9XA-97-ZqI"/>
             </connections>
             <point key="canvasLocation" x="56.5" y="100"/>
         </tableViewCell>

@@ -48,6 +48,7 @@
     TableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" ];
 
     cell.cellImage.image = [UIImage imageNamed:@"imageRoot"];
+    cell.label.text = @"If the linebreakmode doesnt work foryou, another option is to actually calculate the length your string is going to take and if it is going to be longer than the label size, add yourself.If the linebreakmode doesnt work foryou, another option is to actually calculate the length your string is going to take and if it is going to be longer than the label size, add yourself.";
     
     correctedHeight = 375 / cell.cellImage.image.size.width * cell.cellImage.image.size.height;
     
