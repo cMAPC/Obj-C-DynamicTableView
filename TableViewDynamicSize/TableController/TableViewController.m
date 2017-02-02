@@ -21,7 +21,7 @@
     
     [self.tableView setContentInset:UIEdgeInsetsMake(44.f, 0.f, 44.f, 0.f)];
     [self.tableView setRowHeight:UITableViewAutomaticDimension];
-    [self.tableView setEstimatedRowHeight:250];
+    [self.tableView setEstimatedRowHeight:500];
     
 }
 
@@ -47,7 +47,7 @@
     
     TableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" ];
 
-    cell.cellImage.image = [UIImage imageNamed:@"image3.jpg"];
+    cell.cellImage.image = [UIImage imageNamed:@"imageRoot"];
     
     correctedHeight = 375 / cell.cellImage.image.size.width * cell.cellImage.image.size.height;
     
@@ -55,8 +55,8 @@
     
     self.prototypeCell = cell;
     
-    [cell updateConstraintsIfNeeded];
     [self updateViewConstraints];
+    
     return cell;
 }
 

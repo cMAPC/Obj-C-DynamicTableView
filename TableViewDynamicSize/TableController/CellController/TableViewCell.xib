@@ -25,7 +25,7 @@
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Jmq-Cu-INe" secondAttribute="bottom" constant="67" id="hAj-kh-ABs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Jmq-Cu-INe" secondAttribute="bottom" constant="67" id="hAj-kh-ABs"/>
                     <constraint firstAttribute="trailing" secondItem="Jmq-Cu-INe" secondAttribute="trailing" id="lfV-zT-Ge2"/>
                     <constraint firstItem="Jmq-Cu-INe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mDk-2k-3Fc"/>
                     <constraint firstItem="Jmq-Cu-INe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="s7t-cn-k0i"/>
