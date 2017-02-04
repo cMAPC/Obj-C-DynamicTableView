@@ -51,6 +51,10 @@
     cell.cellImage.image = [UIImage imageNamed:@"imageLeft"];
     cell.profileImageView.image = [UIImage imageNamed:@"imageRight"];
     cell.label.text = @"Sunset in Rome is Wonderful";
+    
+    cell.profileName.text = @"Radu Spataru";
+    [cell.eventPlace setFont:[UIFont systemFontOfSize:6]];
+    cell.eventPlace.text = @"Piazza del Popolo";
    
     [self getCorrectedImageHeightForCell:cell];
     
@@ -75,4 +79,24 @@
     }
 }
 
+
+-(CGFloat)adjustFontSize:(TableViewCell *) cell {
+    
+    NSLog(@"Name labele = %f, EventLabel = %f", cell.profileName.frame.size.width, cell.eventPlace.frame.size.width);
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width - 206, 15)];
+    label.text = @"Radu Spataru at Piazza del Popolo";
+    float largestFontSize = 12;
+  
+    while ([label.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:largestFontSize]}].width > label.frame.size.width)
+    {
+        largestFontSize--;
+        NSLog(@"%f", largestFontSize);
+    }
+//    label.font = [UIFont systemFontOfSize:largestFontSize];
+    return largestFontSize;
+}
+
 @end
+;
