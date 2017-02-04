@@ -48,24 +48,31 @@
     
     TableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" ];
     
-    cell.cellImage.image = [UIImage imageNamed:@"imageRoot"];
+    cell.cellImage.image = [UIImage imageNamed:@"imageLeft"];
     cell.profileImageView.image = [UIImage imageNamed:@"imageRight"];
     cell.label.text = @"Sunset in Rome is Wonderful";
-    
-    correctedHeight = 335 / cell.cellImage.image.size.width * cell.cellImage.image.size.height;
-    [cell.cellImage removeConstraint: cell.cellImage.constraints.lastObject] ;
-    
-    self.prototypeCell = cell;
-    
    
-    
-    [self updateViewConstraints];
+    [self getCorrectedImageHeightForCell:cell];
     
     return cell;
 }
 
-
 #pragma mark - UITableViewDelegate
 
+
+
+#pragma mark - ImageConstrains
+
+-(void)getCorrectedImageHeightForCell:(TableViewCell *) cell {
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    if(cell.cellImage.image.size.width >= width) {
+        
+        correctedHeight = (width - 40)/ cell.cellImage.image.size.width * cell.cellImage.image.size.height;
+        self.prototypeCell = cell;
+        //        [cell.cellImage removeConstraint: cell.cellImage.constraints.lastObject];
+        
+        [self updateViewConstraints];
+    }
+}
 
 @end
